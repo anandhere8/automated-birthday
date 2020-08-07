@@ -9,11 +9,11 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 {
 
-$to_id = 'poolgamebuy@gmail.com';
+$to_id = 'abc@gmail.com';
 
 $subject =  'mail check';
 
-$message = 'bahuch gyil??';
+$message = 'message';
 
 
 $mail = new PHPMailer(true);
@@ -26,16 +26,16 @@ $mail->Host = 'smtp.gmail.com';
 $mail->SMTPAuth = true;
 
 
-$mail->Username = 'techiehere08@gmail.com';
+$mail->Username = 'abc@gmail.com';
 
-$mail->Password = '76683594457';
+$mail->Password = 'mobno';
 
 $mail->SMTPSecure = 'tls';  
 
 $mail->Port = 587;
 
 
-$mail->setFrom('techiehere08@gmail.com', 'Anand');
+$mail->setFrom('abc@gmail.com', 'Anand');
 
 $mail->addAddress($to_id);
 
